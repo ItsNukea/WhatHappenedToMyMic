@@ -5,8 +5,8 @@ project(WhatHappenedToMyMic LANGUAGES CXX)
 find_package(JNI REQUIRED)
 
 add_library(WHTMMENGINE SHARED
-        apo/engine.cpp
-        apo/JNI.cpp
+        whtmm/engine.cpp
+        whtmm/JNI.cpp
 )
 
 target_compile_features(WHTMMENGINE PRIVATE cxx_std_20)

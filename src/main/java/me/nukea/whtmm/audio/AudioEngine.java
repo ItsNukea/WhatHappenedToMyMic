@@ -5,8 +5,8 @@ import java.util.Objects;
 public final class AudioEngine {
 	private boolean running;
 	
-	public void start(MicrophoneOption microphone) {
-		Objects.requireNonNull(microphone, "No microphone selected");
+	public void start(MicrophoneOption option) {
+		Objects.requireNonNull(option, "No microphone selected");
 		
 		if (running) {
 			return;
